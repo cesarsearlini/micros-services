@@ -2,24 +2,27 @@
   
   Micros Serviços - JSON. Cadastro de Empresas e Consulta Cidade, Estado e Tributos Plataforma Fiscal. 
   
+  Rest http://localhost:8082/ - Cadastro 
+  Rest http://localhost:8083/ - Tributos 
+  
   * Framework's utilizado. 
     > Spring Boot</br>
     > Spring RESTful</br>
     > Spring Data</br>
-    > Spring Clound</br>
+    > Spring Cloud</br>
     > Flyway</br>
   * Banco de Dados 
     > Postgres</br> 
  
     
-## Empresa - [ MicroService ]
+## Empresa - [ MicroService - Cadastro]
 
-  Web Service: http://localhost:8080/cadastro/{URL_METODO}
+  Web Service: http://localhost:8080/cadastro/{URL_METODO}</br>
   Micro Service: http://localhost:8082/{URL_METODO}
 
-  Listar todas | {url}/empresas/
-  Get Empresa por ID | {url}/empresa/{id}
-  Cadastrar Empresa | {url}/empresa/  
+  Listar todas | {url}/empresas/</br>
+  Get Empresa por ID | {url}/empresa/{id}</br>
+  Cadastrar Empresa | {url}/empresa/</br>
 
   ```Modelo de Json
     {
@@ -67,6 +70,29 @@
   
 ## Cidade - [ MicroService ]   
 
-  Listar Cidades | {url}/cidades
-  Get Cidade por ID | {url}/cidades/{id}
-  Ger Cidade e Estado | {url}/cidadeEstado/{id}
+  Listar Cidades | {url}/cidades</br>
+  Get Cidade por ID | {url}/cidades/{id}</br>
+  Ger Cidade e Estado | {url}/cidadeEstado/{id}</br>
+
+## Tributos Empresa e Produtos - [ MicroService - Tributos]
+
+  Web Service: http://localhost:8080/tributos/{URL_METODO}</br>
+  Micro Service: http://localhost:8083/{URL_METODO}</br>
+
+  ## Consultas
+  * Regimes tributario da empresa. 
+  Regime | {url}regimesTributarios</br></br>
+  * CST ICMS </br>
+  CST ICMS Empresas Lucro Real e Presumido | {url}/cstICMS/lucrosNormais</br>
+  CST ICMS Empresas Cadastrada no Simples Nacional | {url}/cstICMS/simplesNacional</br>
+  CST IPI Entrada | {url}/cstIPI/entrada</br></br>
+  * CST IPI </br>
+  CST IPI Saida Empresas Lucro Real e Presumido | {url}/cstIPI/saida/lucrosNormais</br>
+  CST IPI Saida Empresas Cadastrada no Simples Nacional | {url}/cstIPI/saida/simplesNacional</br></br>
+  * CST PIS COFINS</br>
+  CST PIS COFINS Empresas Lucro Real e Presumido | {url}/cstPisCofins/lucrosNormais</br>
+  CST PIS COFINS Empresas Cadastrada no Simples Nacional | {url}/cstPisCofins/simplesNacional</br></br>
+  * MERCADORIA</br>
+  Origem | {url}/origemMercadoria</br>
+  Tipo | {url}/tipoMercadoria</br>  
+  
