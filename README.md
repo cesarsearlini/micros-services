@@ -20,9 +20,9 @@
   Web Service: http://localhost:8080/cadastro/{URL_METODO}</br>
   Micro Service: http://localhost:8082/{URL_METODO}
 
-  Listar todas | {url}/empresas/</br>
-  Get Empresa por ID | {url}/empresa/{id}</br>
-  Cadastrar Empresa | {url}/empresa/</br>
+  Listar todas | http://localhost:8080/cadastro/empresas/</br>
+  Get Empresa por ID | http://localhost:8080/cadastro/empresa/{id}</br>
+  Cadastrar Empresa | http://localhost:8080/cadastro/empresa/</br>
 
   ```Modelo de Json
     {
@@ -56,23 +56,23 @@
   
 ## Pais - [ MicroService ]  
 
-  Listar Pais | {url}/paises/</br>
-  Get Pais por Codigo | {url}/pais/{codigoPais}</br>
+  Listar Pais | http://localhost:8080/cadastro/paises/</br>
+  Get Pais por Codigo | http://localhost:8080/cadastro/pais/{codigoPais}</br>
    
 ## Estado - [ MicroService ]  
   
-  Listar estados | {url}/estados/</br>
-  Listar estados e cidades | {url}/estadosCidades/</br>
-  Get estado por ID | {url}/estado/codigo/{id}</br>
-  Get Estado por Sigla | {url}/estado/sigla/{sigla}</br>
-  Estado Cidades p/ Sigla | {url}/estadoCidades/sigla/{sigla}</br>
-  Estado Cidades p/ Id | {url}/estadoCidades/codigo/{id}</br>
+  Listar estados | http://localhost:8080/cadastro/estados/</br>
+  Listar estados e cidades | http://localhost:8080/cadastro/estadosCidades/</br>
+  Get estado por ID | http://localhost:8080/cadastro/estado/codigo/{id}</br>
+  Get Estado por Sigla | http://localhost:8080/cadastro/estado/sigla/{sigla}</br>
+  Estado Cidades p/ Sigla | http://localhost:8080/cadastro/estadoCidades/sigla/{sigla}</br>
+  Estado Cidades p/ Id | http://localhost:8080/cadastro/estadoCidades/codigo/{id}</br>
   
 ## Cidade - [ MicroService ]   
 
-  Listar Cidades | {url}/cidades</br>
-  Get Cidade por ID | {url}/cidades/{id}</br>
-  Ger Cidade e Estado | {url}/cidadeEstado/{id}</br>
+  Listar Cidades | http://localhost:8080/cadastro/cidades</br>
+  Get Cidade por ID | http://localhost:8080/cadastro/cidades/{id}</br>
+  Ger Cidade e Estado | http://localhost:8080/cadastro/cidadeEstado/{id}</br>
 
 ## Tributos Empresa e Produtos - [ MicroService - Tributos]
 
@@ -81,18 +81,18 @@
 
   ## Consultas
   * Regimes tributario da empresa. 
-  Regime | {url}regimesTributarios</br></br>
+  Regime | http://localhost:8080/tributos/regimesTributarios</br></br>
   * CST ICMS </br>
-  CST ICMS Empresas Lucro Real e Presumido | {url}/cstICMS/lucrosNormais</br>
-  CST ICMS Empresas Cadastrada no Simples Nacional | {url}/cstICMS/simplesNacional</br>
+  CST ICMS Empresas Lucro Real e Presumido | http://localhost:8080/tributos/cstICMS/lucrosNormais</br>
+  CST ICMS Empresas Cadastrada no Simples Nacional | http://localhost:8080/tributos/cstICMS/simplesNacional</br>
   CST IPI Entrada | {url}/cstIPI/entrada</br></br>
   * CST IPI </br>
-  CST IPI Saida Empresas Lucro Real e Presumido | {url}/cstIPI/saida/lucrosNormais</br>
-  CST IPI Saida Empresas Cadastrada no Simples Nacional | {url}/cstIPI/saida/simplesNacional</br></br>
+  CST IPI Saida Empresas Lucro Real e Presumido | http://localhost:8080/tributos//cstIPI/saida/lucrosNormais</br>
+  CST IPI Saida Empresas Cadastrada no Simples Nacional | http://localhost:8080/tributos/cstIPI/saida/simplesNacional</br></br>
   * CST PIS COFINS</br>
-  CST PIS COFINS Empresas Lucro Real e Presumido | {url}/cstPisCofins/lucrosNormais</br>
-  CST PIS COFINS Empresas Cadastrada no Simples Nacional | {url}/cstPisCofins/simplesNacional</br></br>
+  CST PIS COFINS Empresas Lucro Real e Presumido | http://localhost:8080/tributos/cstPisCofins/lucrosNormais</br>
+  CST PIS COFINS Empresas Cadastrada no Simples Nacional | http://localhost:8080/tributos/cstPisCofins/simplesNacional</br></br>
   * MERCADORIA</br>
-  Origem | {url}/origemMercadoria</br>
-  Tipo | {url}/tipoMercadoria</br>  
+  Origem | http://localhost:8080/tributos/origemMercadoria</br>
+  Tipo | http://localhost:8080/tributos/tipoMercadoria</br>  
   
