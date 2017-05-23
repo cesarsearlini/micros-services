@@ -1,0 +1,23 @@
+{
+    "razaoSocial": "Cesar Alexandre Searlini Junior",
+    "cnpj": "387.149.208-67",
+    "inscricaoEstadual": "47.232.211",
+    "tipoInscricaoEstadual": "",
+    "inscricaoMunicipal": "",
+    "email": "cesar.searlini@gmail.com",
+    "telefone": "",
+    "celular": "11-97271-2338",
+    "optanteSimplesNacional": "false",
+    "cnaePrincipal": "",
+    "nire": "",
+    "dataNire": "",
+    "cep": "13310-610",
+    "endereco": "Francisco Rodrigues da Costa 222",
+    "bairro": "Parque das Rosas",
+    "numero": "222",
+    "complemento": "BL 14 AP 203",
+    "cidade": 3523909,
+    "estado": 35,
+    "pais": 29,
+    "ativo": true
+}

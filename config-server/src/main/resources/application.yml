@@ -1,0 +1,18 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///${user.home}/config-repo
+          searchPaths: '{application}'  # Pesquisar o nome de cada pasta serviço chamado em todos yml
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: localhost:8084
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9090/eureka/
